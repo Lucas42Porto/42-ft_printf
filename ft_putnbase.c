@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 18:37:07 by lumarque          #+#    #+#             */
-/*   Updated: 2023/05/27 19:04:03 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/06/04 17:04:52 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ int	ft_putnbr_fd(int n, int fd)
 		{
 			ft_putnbr_fd(n / 10, fd);
 		}
-		ft_putchar_fd(n % 10 + 48, fd);
+		ft_print_char(n % 10 + 48, fd);
 	}
 	else if (n == -2147483648)
-		ft_putstr_fd("-2147483648", fd);
+		ft_print_str("-2147483648", fd);
 	else
 	{
-		ft_putchar_fd('-', fd);
+		ft_print_char('-', fd);
 		ft_putnbr_fd(-n, fd);
 	}
 	return (ft_nbrlen(nbr, 10));

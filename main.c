@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 19:06:38 by lumarque          #+#    #+#             */
-/*   Updated: 2023/05/27 19:10:13 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/06/04 17:12:37 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@
 int	main(void)
 {
 	ft_printf("teste %s %d %% \n", "main", 42);
-	printf("teste %s %d %% ", "main", 42);
+	printf("teste %s %d %% \n", "main", 42);
 }

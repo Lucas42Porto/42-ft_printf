@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 18:32:57 by lumarque          #+#    #+#             */
-/*   Updated: 2023/05/27 19:41:08 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/06/04 17:03:42 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_print_str(char *s, int fd)
 	len = 0;
 	if (!s)
 	{
-		ft_putstr_fd("(null)", fd);
+		ft_print_str("(null)", fd);
 		return (6);
 	}
 	write(fd, s, ft_strlen(s));
