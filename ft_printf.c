@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 18:24:24 by lumarque          #+#    #+#             */
-/*   Updated: 2023/06/04 17:11:24 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/06/04 18:16:02 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ static int	ft_print_address(unsigned long s, int fd)
 {
 	if (!s)
 	{
-		ft_print_str("(null)", fd);
-		return (6);
+		ft_print_str("(nil)", fd);
+		return (5);
 	}
 	ft_print_str("0x", fd);
 	return (2 + ft_putnbase(s, "0123456789abcdef", fd));

@@ -6,7 +6,7 @@
 #    By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/16 14:47:25 by lumarque          #+#    #+#              #
-#    Updated: 2023/05/27 19:53:49 by lumarque         ###   ########.fr        #
+#    Updated: 2023/06/04 17:25:47 by lumarque         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,6 @@ re: fclean all
 bonus: all
 
 teste:
-	${CC} ${CFLAGS} main.c ${NAME} -o teste
+	${CC} ${CFLAGS} main.c -L . -lftprintf -I include && ./a.out
 
 .PHONY: all clean fclean re bonus teste
